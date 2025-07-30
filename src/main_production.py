@@ -1,3 +1,4 @@
+
 """
 AI Bridge Platform - Production Application
 Optimized for Railway deployment with PostgreSQL and Redis
@@ -342,8 +343,12 @@ def invalid_token_callback(error):
 @jwt.unauthorized_loader
 def missing_token_callback(error):
     return jsonify({"error": "Authorization token is required"}), 401
+@app.route("/api/health", methods=["GET"])
+def healthcheck():
+    return jsonify({"status": "ok"}), 200
 
 if __name__ == '__main__':
     # This should not be used in production (Gunicorn handles this)
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
+
 

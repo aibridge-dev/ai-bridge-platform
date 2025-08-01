@@ -37,6 +37,9 @@ from src.models.production_models import Base, User, Project, Dataset, Annotatio
 
 # Initialize Flask app
 app = Flask(__name__)
+@app.route("/api/health")
+def health():
+    return "OK", 200
 
 # Load configuration
 config_name = os.environ.get('FLASK_ENV', 'production')

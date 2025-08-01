@@ -1,3 +1,13 @@
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
 
 """
 AI Bridge Platform - Production Application
@@ -56,6 +66,7 @@ try:
     redis_client.ping()
     app.logger.info("Redis connection established")
 except Exception as e:
+nano src/main_production.py
     app.logger.error(f"Redis connection failed: {e}")
     redis_client = None
 
@@ -350,5 +361,63 @@ def healthcheck():
 if __name__ == '__main__':
     # This should not be used in production (Gunicorn handles this)
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
+python3 src/main_production.py
+python3 src/main_production.py
+
+
+
+
+nano src/main_production.py
+
+python3 -m py_compile src/main_production.py
+if __name__ == '__main__':
+    print("🔥 Flask app is starting...")
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)
+
+python3 src/main_production.py
+python3 src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+
+nano src/main_production.py
+nano src/main_production.py
+ls
+ nano +59 src/main_production.py
+ nano src/main_production.py
+nano test_flask.py
+from flask import Flask, jsonify
+app = Flask(__name__)
+
+@app.route("/api/health")
+def health():
+    return jsonify({"status": "ok"})
+
+if __name__ == "__main__":
+    app.run(debug=True)
+nano src/main_production.py
+nano src/main_production.py
+nano src/main_production.py
+cat src/main_production.py
+
+python3 -i src/main_production.py
+
+brew install dos2unix
+dos2unix src/main_production.py
+python3 src/main_production.py
+nano testapp.py
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route("/api/health")
+def health():
+    return jsonify({"status": "ok"})
+
+if __name__ == "__main__":
+    print("🔥 Flask app is starting...")
+    app.run(debug=True)
+
+
+
 
 
